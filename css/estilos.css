@@ -1,0 +1,586 @@
+/*Paleta de color**/ 
+:root{
+    --blanco: #ffffff;
+    --naranja: #D25423;
+    --celeste: #7ECADE;
+    --verde: #8DBE90;
+    --amarillo: #FDDD59;
+    --violeta: #6254A0;
+} 
+
+body{
+    background-color: #ffffff;
+    text-align: center;
+}
+
+header{
+text-align: center;
+margin: 2rem;
+background-image: url('../img/logo_celular.png');
+background-repeat: no-repeat;
+background-size: 60%; 
+background-position: center top;
+line-height: 1rem;
+position: relative;
+}
+
+img{
+    max-width: 100%;
+}
+
+section {
+    text-align: center; 
+    margin-top: 20px;
+    padding: 1rem;
+    font-size: 1rem;
+}   
+
+section p{
+    margin: 1.2rem 0;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    color: black;
+    text-align: justify; 
+}
+
+/* Titulos**/
+h1{
+    font-size: 0px;
+    line-height: 4rem;
+}
+h2{
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: var(--naranja);
+    text-align: left;
+}
+h3{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--violeta);
+}
+
+.inicio h2 {
+    color: var(--violeta);
+    text-align: center; 
+}
+
+/*barra de navegación**/
+nav {
+    padding: 2rem 1rem 5rem;
+}
+nav ul {
+    margin-top: 2rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+nav ul li a {
+    color: var(--blanco);
+    display: block;
+    text-decoration: none;
+    padding: 0.2rem 0;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#barra {
+    background-color: var(--celeste);
+    width: 100%;
+    border-radius: 15px;
+    position: absolute;
+    top: 5.5rem;
+    left: -105vw;
+    transition: left 1s;
+}
+
+#barra a:hover {
+    border-radius: 15px;
+    background-color: var(--naranja);
+    transition: 0.20s; 
+}
+
+#burger li:last-child {
+    display: none;
+}
+
+nav:target #barra {
+    display: block;
+
+}
+ 
+nav:target #burger li:last-child {
+    display: block;
+}
+
+nav:target #burger li:first-child {
+    display: none;
+}
+
+#menu:target #barra{
+left: -10%;
+} 
+
+#menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#burger li a {
+    width: 2.5rem;
+    margin: 0.75rem;
+    text-indent: -110px;
+    overflow: hidden;
+    background: url(../img/menu.png) left center no-repeat;
+    height: 2rem;
+    transition: background 0.5s;
+}
+
+#menu:target #burger li a {
+    background: url(../img/cerrar.png) left center no-repeat;
+}
+
+/* Botón Más información*/
+button, button a,
+.formulario input[type="submit"], 
+.boton {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+    background-color: var(--naranja); 
+    color: var(--blanco);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 15px; 
+    cursor: pointer; 
+}
+
+/* Estilo cursor sobre botón */
+buton:hover,
+.boton:hover,
+.formulario input[type="submit"]:hover,
+.verMasLabel:hover {
+    background-color: var(--celeste);
+    border: none;
+}
+
+.oculto {
+    display: none;
+}
+
+.verMasToggle {
+    display: none;
+}
+
+.verMasToggle:checked ~ .parrafo {
+    display: block;
+}
+
+.verMasLabel:hover + .verMasToggle:checked ~ .parrafo {
+    display: block;
+}
+
+.verMasLabel:hover {
+    cursor: pointer;
+
+}
+/* Juegos */
+.juegos1 {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-top: 1rem;
+    background-image: url('../img/fondo.webp');
+}
+
+#juegos figure, #tienda figure {
+    width: 90%;
+    padding: 2% 2% 4% 2%; 
+    margin: auto;
+    background-color: var(--blanco);
+    border-radius: 5%; 
+    display: inline-block; 
+    margin-bottom: 30px;
+}
+
+#juegos figcaption p {
+    text-align: center;
+    font-size: 16px;
+}
+
+#juegos img, #tienda { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+/* Tienda */
+#tienda, #clientes, #juegos {
+    text-align: center; 
+    margin-top: 20px;
+}
+
+#tienda p {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--violeta);
+}
+
+/* Nosotros */
+#nosotros figure img {
+    width: 100%;
+    border-radius: 10px;
+    }
+
+#contenedor-video {
+    max-width: 100%;
+    margin: auto;
+}
+video {
+    background-color: var(--violeta);
+    border-radius: 15px;
+    width: 90%;
+    height: auto;
+    padding:  1rem;
+    margin-top: 1rem;
+    }
+/*Formulario*/
+#contacto figure img {
+    width: 100%;
+    border-radius: 10px;
+    }
+#contacto .formulario {
+    text-align: left;
+    width: 100%;
+    justify-content: center; 
+        }
+
+.formulario label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+    text-transform: uppercase; 
+    color: var(--violeta);
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.formulario input,
+.formulario textarea {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    width: 95%; 
+    padding: 15px;
+    margin-bottom: 15px; 
+    background-color: #f8d3c5;
+    border: none;
+    border-radius: 3px;
+}
+
+#direccion, #correo, #telefono{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Estilos para los iconos de redes sociales */
+#social-icons {
+    display: flex;
+}
+
+#social-icons a {
+    margin: 0 5px; /* Ajusta según sea necesario */
+}
+
+/* Menú secundario */
+
+#menu-secundario {
+    padding: 0;
+}
+#menu-secundario ul {
+    flex-direction: row;
+    display: inline-block;
+}
+
+#menu-secundario ul li {
+    background-color: transparent;
+}
+#menu-secundario ul li a {
+    color: var(--violeta);
+}
+
+.redes {
+    background-image: url('../img/fondo.webp');
+}
+
+.redes h2 {
+    display: none; 
+  }
+
+.redes-contenedor {
+    width: auto;
+    background-color: var(--blanco);
+    border-radius: 15px; 
+    display: inline-block; 
+}
+
+footer{
+    text-align: center;
+}
+/* Datos de contacto */
+.datos-de-contacto{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pregunta-respuesta{
+    padding: 0.5rem;
+}
+.pregunta-respuesta p {
+line-height: 0.5;
+}
+
+/* Derechos de autor */
+.copyright p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    color: var(--violeta);
+}
+
+
+
+/* FLEX*/
+
+
+@media screen and (min-width: 577px) {
+    nav{
+        flex: 1;
+    }
+    nav ul li {
+        list-style: none;
+    }
+    nav ul li a { 
+        color: var(--naranja);
+    }
+    #barra {
+        background-color: transparent;
+    }
+    #barra a:hover {
+        background-color: var(--celeste);
+        border-radius: 5px;  
+    }
+}
+
+@media screen and (min-width: 577px)  and (max-width: 991px){
+    section p{
+        margin: 1.5rem 0;
+        font-size: 17px;
+        }
+    header {
+        background-size: 25%;
+    }
+    h2{
+        font-size: 27px;
+    }
+    h3{
+        font-size: 23px;
+    }
+
+nav{
+    flex: 1;
+}
+nav ul{
+    flex-direction: row;
+}
+nav ul li {
+    background-color: #ffffff;
+}
+nav ul li a { 
+    color: var(--naranja);
+}
+#barra {
+background-color: transparent;
+list-style: none;
+display: flex;
+justify-content: flex-end;
+}
+#barra li {
+margin: 0 10px; /* Márgenes entre elementos */
+display: inline-block;
+}
+barra li a {
+text-decoration: none;
+color: var(--blanco); /* Cambia el color del texto según tus preferencias */
+font-weight: bold;
+}
+#barra a:hover {
+    background-color: var(--celeste);
+    border-radius: 5px;  
+}
+#burger {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    padding: 10px; /* Ajusta el espacio según sea necesario */
+}   
+
+#juegos figure, #tienda figure {
+    width: 45%;
+    }  
+
+#nosotros figure img {
+    float: left;
+    width: 45%;
+    }
+    
+#nosotros figure figcaption {
+    float: right;
+    width: 53%; 
+    }
+
+.contenedor-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: flex-start; 
+    }
+    
+#contacto h2 {
+    width: 100%; 
+    }
+    
+#contacto figure {
+    flex: 1;
+    margin-right: 20px; 
+    }
+    
+#contacto .formulario {
+    flex: 1;
+    }
+
+    .redes-contenedor {
+        width: 80%;
+    }
+    #menu-secundario ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #menu-secundario ul li {
+        padding: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    header, section, footer{
+        max-width: 1300px;
+        background-size: 25%; 
+    }
+    section p{
+        margin: 1.5rem 0;
+        font-size: 17px;
+        }
+    h2{
+        font-size: 36px;
+    }
+    h3{
+        font-size: 26px;
+    }
+
+    nav{
+        flex: 1;
+        align-self: center;
+    }
+    nav ul{
+        flex-direction: row;
+    }
+    nav ul li {
+        background-color: var(--blanco);
+        width: 150px;
+        margin: 0 5px;
+    }
+    nav ul li a { 
+        color: var(--naranja);
+    }
+    #barra {
+    background-color: transparent;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    }
+    #barra li {
+    margin: 0 10px; /* Márgenes entre elementos */
+    display: inline-block;
+    }
+    barra li a {
+    text-decoration: none;
+    color: var(--blanco); /* Cambia el color del texto según tus preferencias */
+    font-weight: bold;
+    }
+    #barra a:hover {
+        background-color: var(--celeste);
+        border-radius: 5px;  
+    }
+    #burger {
+        list-style: none;
+        display: flex;
+        justify-content: space-between; /* Espacio entre los elementos */
+        padding: 10px; /* Ajusta el espacio según sea necesario */
+    }   
+    #juegos figure, #tienda figure {
+        width: 20%;
+        } 
+#nosotros figure img {
+    float: left;
+    width: 45%;
+    }
+    
+#nosotros figure figcaption {
+    float: right;
+    width: 53%; 
+        }
+
+.contenedor-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos flexibles horizontalmente */
+    align-items: flex-start; /* Alinea los elementos al principio verticalmente */
+        }
+            
+#contacto h2 {
+    width: 100%; /* O el ancho deseado */
+        }
+            
+#contacto figure {
+    flex: 1;
+    margin-right: 20px; /* Ajusta según sea necesario */
+        }
+            
+#contacto .formulario {
+    flex: 1;
+        }
+
+#menu-secundario ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+}

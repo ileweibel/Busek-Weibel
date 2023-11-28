@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busek-Wiebel-DGN4BV</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+</head>
+<body>
+    
+    <header>
+        <h1>maldon</h1>
+            <nav id="menu">
+            <ul id="burger">
+                <li><a href="#menu">Abrir</a></li>
+                <li><a href="#">Cerrar</a></li>
+            </ul>
+                <ul id="barra">
+                    <li><a href="#juegos">Juegos</a></li>
+                    <li><a href="#clientes">Clientes</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#tienda">Tienda</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav><!--barra de navegacion-->
+    </header>
+
+    <main>
+        <section>
+            <figure>
+                <picture>
+                    <source media="(max-width:576px)" srcset="img/1.webp">
+                    <source media="(max-width:991px)" srcset="img/1-2.webp">
+                    <img src="img/1-3.webp" alt="maldón juegos de mesa">
+                </picture>
+            </figure>
+            <div class="inicio">
+                <h2>¡Que vuelvan los juegos de mesa!</h2>
+                <div class="button-container">
+                    <button onclick="window.location.href='#menu-secundario'">Más información</button>
+                </div>
+        </div>
+        </section> 
+      
+        <section id="juegos">
+          <h2>Juegos</h2>
+            <!--JUEGOS DE NIÑOS-->
+            <div class="juegos1">
+                <figure>
+                    <img src="img/niños_300.jpg" alt="juegos para niños">
+                    <figcaption>
+                        <h3>niños</h3>
+                        <div class="ver">
+                            <input type="checkbox" id="verMasToggle1" class="verMasToggle">
+                            <label for="verMasToggle1" class="verMasLabel boton">Ver más</label>
+                            <p class="oculto parrafo" id="parrafo1">Diviértete en grande: juegos para pequeños campeones.</p>
+                        </div>
+                    </figcaption>
+                </figure>
+                <!--JUEGOS DE ADULTOS-->
+                <figure>
+                    <img src="img/adultos_300.jpg" alt="juegos para adultos">
+                    <figcaption>
+                        <h3>adultos</h3>
+                        <div class="ver">
+                            <input type="checkbox" id="verMasToggle2" class="verMasToggle">
+                            <label for="verMasToggle2" class="verMasLabel boton">Ver más</label>
+                            <p class="oculto parrafo" id="parrafo2">Noches inolvidables para adultos en busca de retos.</p>
+                        </div>
+                    </figcaption>
+                </figure>
+                <!--JUEGOS PARA LA FAMILIA-->
+                <figure>
+                    <img src="img/familia_300.jpg" alt="juegos para la familia">
+                    <figcaption>
+                        <h3>familia</h3>
+                        <div class="ver">
+                            <input type="checkbox" id="verMasToggle3" class="verMasToggle">
+                            <label for="verMasToggle3" class="verMasLabel boton">Ver más</label>
+                            <p class="oculto parrafo" id="parrafo3">Descubre nuestros juegos para compartir en familia.</p>
+                        </div>
+                    </figcaption>
+                </figure>
+                <!--PARTY GAME-->
+                <figure>
+                    <img src="img/partygame_300.jpg" alt="party game">
+                    <figcaption>
+                        <h3>party game</h3>
+                        <div class="ver">
+                            <input type="checkbox" id="verMasToggle4" class="verMasToggle">
+                            <label for="verMasToggle4" class="verMasLabel boton">Ver más</label>
+                            <p class="oculto parrafo" id="parrafo4">Sumale muchísima más diversión a tus juntadas con amigos.</p>
+                        </div>
+                    </figcaption>
+                </figure>
+        </div>
+        </section> 
+        
+        <section id="tienda">
+            <h2>Tienda</h2>
+              <!--TIENDA-->
+              <figure>
+                <figcaption>
+                    <h3>niñez</h3>
+                </figcaption>
+                <a href="img/tienda1.webp" data-fancybox="galeria">
+                    <img 
+                        src="img/tienda1_min.webp" 
+                        data-srcset="img/tienda1_min.webp 576w, img/tienda1_t.webp 990w, img/tienda2.webp 1920w" 
+                        alt="juegos para la niñez"
+                    >
+                </a>
+            </figure>
+            
+            <figure>
+                <figcaption>
+                    <h3>party game</h3>
+                </figcaption>
+                <a href="img/tienda2.webp" data-fancybox="galeria">
+                    <img 
+                        src="img/tienda2_min.webp" 
+                        data-srcset="img/tienda2_min.webp 576w, img/tienda2_t.webp 990w, img/tienda2.webp 1920w" 
+                        alt="juegos para animar la fiesta"
+                    >
+                </a>
+            </figure>
+
+            <figure>
+                <figcaption>
+                    <h3>cultura general</h3>
+                </figcaption>
+                <a href="img/tienda3.webp" data-fancybox="galeria">
+                    <img 
+                        src="img/tienda3_min.webp" 
+                        data-srcset="img/tienda3_min.webp 576w, img/tienda3_t.webp 990w, img/tienda3.webp 1920w" 
+                        alt="Descripción de la imagen"
+                    >
+                </a>
+            </figure>
+
+            <figure>
+                <figcaption>
+                    <h3>estrategia</h3>
+                </figcaption>
+                <a href="img/tienda4.webp" data-fancybox="galeria">
+                    <img 
+                        src="img/tienda4_min.webp" 
+                        data-srcset="img/tienda4_min.webp 576w, img/tienda4_t.webp 990w, img/tienda4.webp 1920w" 
+                        alt="juegos de estrategia"
+                    >
+                </a>
+            </figure>
+            
+            <figure>
+                <figcaption>
+                    <h3>familiares</h3>
+                </figcaption>
+                <a href="img/tienda5.webp" data-fancybox="galeria">
+                    <img 
+                        src="img/tienda5_min.webp" 
+                        data-srcset="img/tienda5_min.webp 576w, img/tienda5_t.webp 990w, img/tienda5.webp 1920w" 
+                        alt="juegos para divertirse en familia"
+                    >
+                </a>
+            </figure>
+            
+            <figure>
+                <figcaption>
+                    <h3>cartas</h3>
+                </figcaption>
+                <a href="img/tienda6.webp" data-fancybox="galeria">
+                    <img 
+                        src="img/tienda6_min.webp" 
+                        data-srcset="img/tienda6_min.webp 576w, img/tienda6_t.webp 990w, img/tienda6.webp 1920w" 
+                        alt="juegos de carta de todo tipo"
+                    >
+                </a>
+            </figure>
+            
+            
+            <div>
+                <p>¡Jugar es cosa seria!</p>
+            </div>
+        </section>
+
+        <section id="clientes">
+            <!--CLIENTES-->
+            <h2>Clientes</h2>
+            <figure>
+                <picture>
+                    <source media="(max-width:576px)" srcset="img/marcas_576.webp">
+                    <source media="(max-width:991px)" srcset="img/marcas_991.webp">
+                    <img src="img/marcas_1300.webp" alt="clientes">
+                </picture>
+            </figure>
+        </section>
+        
+
+        <section id="nosotros">
+            <!--NOSOTROS-->
+            <h2>Nosotros</h2>
+
+            <figure>
+                <picture>
+                    <source media="(max-width:576px)" srcset="img/nosotros_cel.webp">
+                    <source media="(max-width:991px)" srcset="img/nosotros_t.webp">
+                    <img src="img/nosotros.webp" alt="clientes">
+                </picture>
+            
+                <figcaption>
+                    <p>Venimos de una familia de cinco hermanos y nos pasamos la vida jugando. Somos fanáticos de los juegos de mesa y por eso decidimos inventar uno: El Erudito. Desde entonces, nos dedicamos a eso.</p>
+                    <p>El diseño y la calidad son una clave fundamental en nuestros juegos. Cuidamos la calidad en todos los aspectos de la experiencia de jugar alguno de nuestros juegos.</p>
+                    <p>Primero surge la idea, y la trabajamos hasta que funcione. Lo probamos entre nosotros con bocetos y prototipos, cortando cartulinas y ajustando las ideas. Diseñamos su dinámica, su contenido y su estrategia.</p>
+                    <input type="checkbox" id="verMasToggle5" class="verMasToggle">
+                            <label for="verMasToggle5" class="verMasLabel boton">Ver más</label>
+                    <p class="oculto parrafo" id="parrafo5">Después, junto con un ilustrador, le creamos un universo. Lo invitamos a jugar y él empieza a dibujar. Lo importante es que sea divertido.</p>
+                    <p class="oculto parrafo" id="parrafo6">Por último, junto con un diseñador gráfico, los bocetos e ilustraciones se acomodan para que el universo tome forma.</p>
+                    <p class="oculto parrafo" id="parrafo7">Creemos que uno no deja de jugar porque envejece, sino que envejece porque deja de jugar.</p>
+                </figcaption>
+            </figure>
+            
+                <figure id="contenedor-video">
+                    <video src="video/video.mp4" controls poster="fondo.jpg" width="640" height="360" preload="auto"></video>
+                </figure>
+
+        </section>
+        
+        
+<section id="contacto">
+    <h2>Contáctanos</h2>
+    <figure class="contenedor-contacto">
+        <picture>
+            <source media="(max-width:576px)" srcset="img/galpon_cel.webp">
+            <source media="(max-width:991px)" srcset="img/galpon_t.webp">
+        <img src="img/galpon.webp" alt="Nuestra fábrica">
+        </picture>
+
+
+    <!--,formulario-->
+    <div class="formulario">
+        <form action="https://formsubmit.co/ileweibel@gmail.com" method="POST">
+            <fieldset style="border: none;">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="Nombre" id="nombre" placeholder="Nombre">
+                </div>
+                <div>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email" placeholder="Correo">
+                </div>
+                <div>
+                    <label for="telefono">Teléfono (opcional)</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                </div>
+                <div>
+                    <label for="mensaje">Dejanos tu mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                </div>
+                <!-- Campos -->
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </div><!--,formulario-->
+</figure>
+        </section>  <!--CONTACTANOS-->
+
+        <section class="redes">
+            <div class="redes-contenedor">
+            <h2>redes</h2>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/juegosmaldon/" target="_blank">
+                    <img src="img/instagram.png" alt="instagram">
+                </a>
+                <a href="https://www.facebook.com/JuegosMaldon" target="_blank">
+                    <img src="img/facebook.png" alt="facebook">
+                </a>
+                <a href="https://www.youtube.com/@juegosmaldon" target="_blank">
+                    <img src="img/youtube.png" alt="youtube">
+                </a>
+            </div>
+    
+        <div class="contenedor-menu-secundario">
+            <nav id="menu-secundario">
+                <ul>
+                    <li><a href="#juegos">Juegos</a></li>
+                    <li><a href="#clientes">Clientes</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#tienda">Tienda</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul><!--menú secundario-->
+            </nav>
+        </div>
+    </div>
+    </section>
+</main>
+
+    <footer>
+        <div class="datos-de-contacto">
+            <div class="pregunta-respuesta">
+            <p id="direccion">Dirección postal</p>
+            <p>Godoy Cruz 2027 - Palermo - CABA.</p>
+        </div>
+        <div class="pregunta-respuesta">
+            <p id="correo">Correo electrónico</p>
+            <p>info@maldon.com.ar</p>
+        </div>
+        <div class="pregunta-respuesta">
+            <p id="tel">Número telefónico</p>
+            <p>11 4773-6029</p>
+        </div>
+        </div><!--datos de contacto-->
+    
+        <div class="copyright">
+            <p>Copyright Juegos Maldón - 2023. Todos los derechos reservados.</p>
+            <p>Defensa de las y los consumidores. Para reclamos ingrese <a href="#">aquí</a>.</p>
+        </div>
+        
+        <div class="copyright">
+            <p>ALUMNAS: GABRIELA BUSEK - ILEANA WEIBEL (COMISIÓN: DGN4BV)</p>
+        </div> 
+    </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    
+</body>
+</html>
